@@ -1,0 +1,76 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.area {
+    background-color: lightgray;
+    position: absolute;
+    width: 800px;
+    height: 300px;
+}
+
+#area1 {
+    top: 0;
+    left: 20%;
+}
+
+#area2 {
+    bottom: 0;
+    left: 20%;
+}
+
+
+.square {
+    height: 70px;
+    width: 70px;
+    /* position: absolute; */
+    cursor: grab;
+    transition: all .1s ease;
+}
+
+.square:active {
+    cursor: grabbing;
+}
+
+#first {
+    background-color: red;
+    /* top: 50%;
+    left: 10%; */
+}
+
+#second {
+    background-color: pink;
+    /* top: 50%;
+    left: 15%; */
+}
+
+#third {
+    background-color: aqua;
+    /* top: 50%;
+    left: 20%; */
+
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.grabbed {
+    transform: scale(0%);
+}
+
+.hide {
+    display: none;
+}
+
+.drag-over {
+    border: 10px dashed red;
+}
+
+.dropped {
+    position: absolute;
+}
